@@ -1,0 +1,28 @@
+# >_ WEBHACKER v3.0 - Ethical Hacking Lab
+
+A hands-on web security lab built with Python Flask to demonstrate common web vulnerabilities and how to fix them. Built from Kumasi, Ghana 🇬🇭.
+
+### 🔥 Live Demo Features
+
+**1. Login Injection Lab `/`**
+- Demonstrates SQL Injection patterns like `' OR 1=1`
+- Implements custom input validation to block intrusion
+- Shows defensive coding vs offensive testing
+
+**2. XSS Lab `/xss`**
+- Vulnerable mode: `<script>alert('Hacked')</script>` executes
+- Secured mode: Uses `html.escape()` to neutralize scripts
+- Teaches input sanitization
+
+**3. Phishing Detector `/phish`**
+- Scanner that detects @ trick, fake domains (faceb00k), no HTTPS, subdomain tricks
+- Real-world social engineering defense tool
+
+### 🛠️ Tech Stack
+Python, Flask, HTML
+
+### 🚀 How To Run
+```bash
+pip install flask
+python app.py
+# open http://127.0.0.1:5000
